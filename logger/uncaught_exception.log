@@ -1,0 +1,432 @@
+{
+  error: [96msrc/controllers/todos/index.ts[0m:[93m16[0m:[93m42[0m - [91merror[0m[90m TS2344: [0mType '"name" | "description" | "status"' does not satisfy the constraint '"get" | "delete" | "name" | "text" | "priority" | "_id" | "__v" | "$ignore" | "$isDefault" | "$isDeleted" | "$isEmpty" | "$isValid" | "$locals" | "$markValid" | "$op" | "$session" | ... 40 more ... | "validateSync"'.
+    Type '"description"' is not assignable to type '"get" | "delete" | "name" | "text" | "priority" | "_id" | "__v" | "$ignore" | "$isDefault" | "$isDeleted" | "$isEmpty" | "$isValid" | "$locals" | "$markValid" | "$op" | "$session" | ... 40 more ... | "validateSync"'.
+  
+  [7m16[0m    	const body = req.body as Pick<ITodo, "name" | "description" | "status">
+  [7m  [0m [91m   	                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+  ,
+  level: '\u001b[31merror\u001b[39m',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    `\u001b[96msrc/controllers/todos/index.ts\u001b[0m:\u001b[93m16\u001b[0m:\u001b[93m42\u001b[0m - \u001b[91merror\u001b[0m\u001b[90m TS2344: \u001b[0mType '"name" | "description" | "status"' does not satisfy the constraint '"get" | "delete" | "name" | "text" | "priority" | "_id" | "__v" | "$ignore" | "$isDefault" | "$isDeleted" | "$isEmpty" | "$isValid" | "$locals" | "$markValid" | "$op" | "$session" | ... 40 more ... | "validateSync"'.\n` +
+    `  Type '"description"' is not assignable to type '"get" | "delete" | "name" | "text" | "priority" | "_id" | "__v" | "$ignore" | "$isDefault" | "$isDeleted" | "$isEmpty" | "$isValid" | "$locals" | "$markValid" | "$op" | "$session" | ... 40 more ... | "validateSync"'.\n` +
+    '\n' +
+    '\u001b[7m16\u001b[0m    \tconst body = req.body as Pick<ITodo, "name" | "description" | "status">\n' +
+    '\u001b[7m  \u001b[0m \u001b[91m   \t                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\u001b[0m\n' +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    `\u001b[96msrc/controllers/todos/index.ts\u001b[0m:\u001b[93m16\u001b[0m:\u001b[93m42\u001b[0m - \u001b[91merror\u001b[0m\u001b[90m TS2344: \u001b[0mType '"name" | "description" | "status"' does not satisfy the constraint '"get" | "delete" | "name" | "text" | "priority" | "_id" | "__v" | "$ignore" | "$isDefault" | "$isDeleted" | "$isEmpty" | "$isValid" | "$locals" | "$markValid" | "$op" | "$session" | ... 40 more ... | "validateSync"'.\n` +
+    `  Type '"description"' is not assignable to type '"get" | "delete" | "name" | "text" | "priority" | "_id" | "__v" | "$ignore" | "$isDefault" | "$isDeleted" | "$isEmpty" | "$isValid" | "$locals" | "$markValid" | "$op" | "$session" | ... 40 more ... | "validateSync"'.\n` +
+    '\n' +
+    '\u001b[7m16\u001b[0m    \tconst body = req.body as Pick<ITodo, "name" | "description" | "status">\n' +
+    '\u001b[7m  \u001b[0m \u001b[91m   \t                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\u001b[0m\n' +
+    '\n' +
+    '    at createTSError (/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts:513:12)\n' +
+    '    at reportTSError (/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts:517:19)\n' +
+    '    at getOutput (/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts:752:36)\n' +
+    '    at Object.compile (/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts:968:32)\n' +
+    '    at Module.m._compile (/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts:1056:42)\n' +
+    '    at Module._extensions..js (internal/modules/cjs/loader.js:995:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts:1059:12)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:815:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:727:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:852:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:74:18)\n' +
+    '    at Object.<anonymous> (/var/www/html/TypeScript/Test/src/routes/index.ts:2:1)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:959:30)\n' +
+    '    at Module.m._compile (/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts:1056:23)\n' +
+    '    at Module._extensions..js (internal/modules/cjs/loader.js:995:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts:1059:12)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    `\u001b[96msrc/controllers/todos/index.ts\u001b[0m:\u001b[93m16\u001b[0m:\u001b[93m42\u001b[0m - \u001b[91merror\u001b[0m\u001b[90m TS2344: \u001b[0mType '"name" | "description" | "status"' does not satisfy the constraint '"get" | "delete" | "name" | "text" | "priority" | "_id" | "__v" | "$ignore" | "$isDefault" | "$isDeleted" | "$isEmpty" | "$isValid" | "$locals" | "$markValid" | "$op" | "$session" | ... 40 more ... | "validateSync"'.\n` +
+    `  Type '"description"' is not assignable to type '"get" | "delete" | "name" | "text" | "priority" | "_id" | "__v" | "$ignore" | "$isDefault" | "$isDeleted" | "$isEmpty" | "$isValid" | "$locals" | "$markValid" | "$op" | "$session" | ... 40 more ... | "validateSync"'.\n` +
+    '\n' +
+    '\u001b[7m16\u001b[0m    \tconst body = req.body as Pick<ITodo, "name" | "description" | "status">\n' +
+    '\u001b[7m  \u001b[0m \u001b[91m   \t                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\u001b[0m\n' +
+    '\n' +
+    '    at createTSError (/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts:513:12)\n' +
+    '    at reportTSError (/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts:517:19)\n' +
+    '    at getOutput (/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts:752:36)\n' +
+    '    at Object.compile (/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts:968:32)\n' +
+    '    at Module.m._compile (/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts:1056:42)\n' +
+    '    at Module._extensions..js (internal/modules/cjs/loader.js:995:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts:1059:12)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:815:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:727:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:852:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:74:18)\n' +
+    '    at Object.<anonymous> (/var/www/html/TypeScript/Test/src/routes/index.ts:2:1)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:959:30)\n' +
+    '    at Module.m._compile (/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts:1056:23)\n' +
+    '    at Module._extensions..js (internal/modules/cjs/loader.js:995:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts:1059:12)',
+  exception: true,
+  date: 'Mon Feb 15 2021 17:06:14 GMT+0600 (Bangladesh Standard Time)',
+  process: {
+    pid: 16584,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/var/www/html/TypeScript/Test',
+    execPath: '/home/emdad/.nvm/versions/node/v12.14.0/bin/node',
+    version: 'v12.14.0',
+    argv: [
+      '/var/www/html/TypeScript/Test/node_modules/.bin/ts-node',
+      '/var/www/html/TypeScript/Test/src/app.ts'
+    ],
+    memoryUsage: {
+      rss: 231940096,
+      heapTotal: 157577216,
+      heapUsed: 136197040,
+      external: 20130958
+    }
+  },
+  os: {
+    loadavg: [ 2.90673828125, 1.98779296875, 1.806640625 ],
+    uptime: 24179
+  },
+  trace: [
+    {
+      column: 12,
+      file: '/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts',
+      function: 'createTSError',
+      line: 513,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: '/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts',
+      function: 'reportTSError',
+      line: 517,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: '/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts',
+      function: 'getOutput',
+      line: 752,
+      method: null,
+      native: false
+    },
+    {
+      column: 32,
+      file: '/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts',
+      function: 'Object.compile',
+      line: 968,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 42,
+      file: '/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts',
+      function: 'Module.m._compile',
+      line: 1056,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 995,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: '/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1059,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.load',
+      line: 815,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._load',
+      line: 727,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.require',
+      line: 852,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'internal/modules/cjs/helpers.js',
+      function: 'require',
+      line: 74,
+      method: null,
+      native: false
+    },
+    {
+      column: 1,
+      file: '/var/www/html/TypeScript/Test/src/routes/index.ts',
+      function: null,
+      line: 2,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._compile',
+      line: 959,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 23,
+      file: '/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts',
+      function: 'Module.m._compile',
+      line: 1056,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 995,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: '/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1059,
+      method: 'ts]',
+      native: false
+    }
+  ]
+}
+{
+  error: [96msrc/controllers/todos/index.ts[0m:[93m16[0m:[93m42[0m - [91merror[0m[90m TS2344: [0mType '"name" | "text" | "priority"' does not satisfy the constraint '"get" | "delete" | "text" | "priority" | "user" | "_id" | "__v" | "$ignore" | "$isDefault" | "$isDeleted" | "$isEmpty" | "$isValid" | "$locals" | "$markValid" | "$op" | "$session" | ... 40 more ... | "validateSync"'.
+    Type '"name"' is not assignable to type '"get" | "delete" | "text" | "priority" | "user" | "_id" | "__v" | "$ignore" | "$isDefault" | "$isDeleted" | "$isEmpty" | "$isValid" | "$locals" | "$markValid" | "$op" | "$session" | ... 40 more ... | "validateSync"'.
+  
+  [7m16[0m    	const body = req.body as Pick<ITodo, "name" | "text" | "priority">
+  [7m  [0m [91m   	                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+  ,
+  level: '\u001b[31merror\u001b[39m',
+  message: 'uncaughtException: ⨯ Unable to compile TypeScript:\n' +
+    `\u001b[96msrc/controllers/todos/index.ts\u001b[0m:\u001b[93m16\u001b[0m:\u001b[93m42\u001b[0m - \u001b[91merror\u001b[0m\u001b[90m TS2344: \u001b[0mType '"name" | "text" | "priority"' does not satisfy the constraint '"get" | "delete" | "text" | "priority" | "user" | "_id" | "__v" | "$ignore" | "$isDefault" | "$isDeleted" | "$isEmpty" | "$isValid" | "$locals" | "$markValid" | "$op" | "$session" | ... 40 more ... | "validateSync"'.\n` +
+    `  Type '"name"' is not assignable to type '"get" | "delete" | "text" | "priority" | "user" | "_id" | "__v" | "$ignore" | "$isDefault" | "$isDeleted" | "$isEmpty" | "$isValid" | "$locals" | "$markValid" | "$op" | "$session" | ... 40 more ... | "validateSync"'.\n` +
+    '\n' +
+    '\u001b[7m16\u001b[0m    \tconst body = req.body as Pick<ITodo, "name" | "text" | "priority">\n' +
+    '\u001b[7m  \u001b[0m \u001b[91m   \t                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~\u001b[0m\n' +
+    '\n' +
+    'TSError: ⨯ Unable to compile TypeScript:\n' +
+    `\u001b[96msrc/controllers/todos/index.ts\u001b[0m:\u001b[93m16\u001b[0m:\u001b[93m42\u001b[0m - \u001b[91merror\u001b[0m\u001b[90m TS2344: \u001b[0mType '"name" | "text" | "priority"' does not satisfy the constraint '"get" | "delete" | "text" | "priority" | "user" | "_id" | "__v" | "$ignore" | "$isDefault" | "$isDeleted" | "$isEmpty" | "$isValid" | "$locals" | "$markValid" | "$op" | "$session" | ... 40 more ... | "validateSync"'.\n` +
+    `  Type '"name"' is not assignable to type '"get" | "delete" | "text" | "priority" | "user" | "_id" | "__v" | "$ignore" | "$isDefault" | "$isDeleted" | "$isEmpty" | "$isValid" | "$locals" | "$markValid" | "$op" | "$session" | ... 40 more ... | "validateSync"'.\n` +
+    '\n' +
+    '\u001b[7m16\u001b[0m    \tconst body = req.body as Pick<ITodo, "name" | "text" | "priority">\n' +
+    '\u001b[7m  \u001b[0m \u001b[91m   \t                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~\u001b[0m\n' +
+    '\n' +
+    '    at createTSError (/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts:513:12)\n' +
+    '    at reportTSError (/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts:517:19)\n' +
+    '    at getOutput (/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts:752:36)\n' +
+    '    at Object.compile (/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts:968:32)\n' +
+    '    at Module.m._compile (/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts:1056:42)\n' +
+    '    at Module._extensions..js (internal/modules/cjs/loader.js:995:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts:1059:12)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:815:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:727:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:852:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:74:18)\n' +
+    '    at Object.<anonymous> (/var/www/html/TypeScript/Test/src/routes/index.ts:2:1)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:959:30)\n' +
+    '    at Module.m._compile (/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts:1056:23)\n' +
+    '    at Module._extensions..js (internal/modules/cjs/loader.js:995:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts:1059:12)',
+  stack: 'TSError: ⨯ Unable to compile TypeScript:\n' +
+    `\u001b[96msrc/controllers/todos/index.ts\u001b[0m:\u001b[93m16\u001b[0m:\u001b[93m42\u001b[0m - \u001b[91merror\u001b[0m\u001b[90m TS2344: \u001b[0mType '"name" | "text" | "priority"' does not satisfy the constraint '"get" | "delete" | "text" | "priority" | "user" | "_id" | "__v" | "$ignore" | "$isDefault" | "$isDeleted" | "$isEmpty" | "$isValid" | "$locals" | "$markValid" | "$op" | "$session" | ... 40 more ... | "validateSync"'.\n` +
+    `  Type '"name"' is not assignable to type '"get" | "delete" | "text" | "priority" | "user" | "_id" | "__v" | "$ignore" | "$isDefault" | "$isDeleted" | "$isEmpty" | "$isValid" | "$locals" | "$markValid" | "$op" | "$session" | ... 40 more ... | "validateSync"'.\n` +
+    '\n' +
+    '\u001b[7m16\u001b[0m    \tconst body = req.body as Pick<ITodo, "name" | "text" | "priority">\n' +
+    '\u001b[7m  \u001b[0m \u001b[91m   \t                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~\u001b[0m\n' +
+    '\n' +
+    '    at createTSError (/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts:513:12)\n' +
+    '    at reportTSError (/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts:517:19)\n' +
+    '    at getOutput (/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts:752:36)\n' +
+    '    at Object.compile (/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts:968:32)\n' +
+    '    at Module.m._compile (/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts:1056:42)\n' +
+    '    at Module._extensions..js (internal/modules/cjs/loader.js:995:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts:1059:12)\n' +
+    '    at Module.load (internal/modules/cjs/loader.js:815:32)\n' +
+    '    at Function.Module._load (internal/modules/cjs/loader.js:727:14)\n' +
+    '    at Module.require (internal/modules/cjs/loader.js:852:19)\n' +
+    '    at require (internal/modules/cjs/helpers.js:74:18)\n' +
+    '    at Object.<anonymous> (/var/www/html/TypeScript/Test/src/routes/index.ts:2:1)\n' +
+    '    at Module._compile (internal/modules/cjs/loader.js:959:30)\n' +
+    '    at Module.m._compile (/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts:1056:23)\n' +
+    '    at Module._extensions..js (internal/modules/cjs/loader.js:995:10)\n' +
+    '    at Object.require.extensions.<computed> [as .ts] (/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts:1059:12)',
+  exception: true,
+  date: 'Mon Feb 15 2021 17:09:51 GMT+0600 (Bangladesh Standard Time)',
+  process: {
+    pid: 16927,
+    uid: 1000,
+    gid: 1000,
+    cwd: '/var/www/html/TypeScript/Test',
+    execPath: '/home/emdad/.nvm/versions/node/v12.14.0/bin/node',
+    version: 'v12.14.0',
+    argv: [
+      '/var/www/html/TypeScript/Test/node_modules/.bin/ts-node',
+      '/var/www/html/TypeScript/Test/src/app.ts'
+    ],
+    memoryUsage: {
+      rss: 232886272,
+      heapTotal: 157315072,
+      heapUsed: 136068928,
+      external: 20130958
+    }
+  },
+  os: {
+    loadavg: [ 2.02099609375, 1.958984375, 1.82666015625 ],
+    uptime: 24396
+  },
+  trace: [
+    {
+      column: 12,
+      file: '/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts',
+      function: 'createTSError',
+      line: 513,
+      method: null,
+      native: false
+    },
+    {
+      column: 19,
+      file: '/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts',
+      function: 'reportTSError',
+      line: 517,
+      method: null,
+      native: false
+    },
+    {
+      column: 36,
+      file: '/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts',
+      function: 'getOutput',
+      line: 752,
+      method: null,
+      native: false
+    },
+    {
+      column: 32,
+      file: '/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts',
+      function: 'Object.compile',
+      line: 968,
+      method: 'compile',
+      native: false
+    },
+    {
+      column: 42,
+      file: '/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts',
+      function: 'Module.m._compile',
+      line: 1056,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 995,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: '/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1059,
+      method: 'ts]',
+      native: false
+    },
+    {
+      column: 32,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.load',
+      line: 815,
+      method: 'load',
+      native: false
+    },
+    {
+      column: 14,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._load',
+      line: 727,
+      method: '_load',
+      native: false
+    },
+    {
+      column: 19,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module.require',
+      line: 852,
+      method: 'require',
+      native: false
+    },
+    {
+      column: 18,
+      file: 'internal/modules/cjs/helpers.js',
+      function: 'require',
+      line: 74,
+      method: null,
+      native: false
+    },
+    {
+      column: 1,
+      file: '/var/www/html/TypeScript/Test/src/routes/index.ts',
+      function: null,
+      line: 2,
+      method: null,
+      native: false
+    },
+    {
+      column: 30,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._compile',
+      line: 959,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 23,
+      file: '/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts',
+      function: 'Module.m._compile',
+      line: 1056,
+      method: '_compile',
+      native: false
+    },
+    {
+      column: 10,
+      file: 'internal/modules/cjs/loader.js',
+      function: 'Module._extensions..js',
+      line: 995,
+      method: '.js',
+      native: false
+    },
+    {
+      column: 12,
+      file: '/var/www/html/TypeScript/Test/node_modules/ts-node/src/index.ts',
+      function: 'Object.require.extensions.<computed> [as .ts]',
+      line: 1059,
+      method: 'ts]',
+      native: false
+    }
+  ]
+}
